@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ratujmy świat!</title>
+    <link rel="stylesheet" type="text/css" href="StronaTestowa.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">Pozdrawiam!</a>
+        <div class="toggle"></div>
+      </header>
+      <img src="bg (3).jpg" class="bg" />
+      <img src="bird.png" class="bird" />
+      <div class="content">
+        <h2>Możemy uratować<br /><span>Ziemię</span></h2>
+        <p>
+          Na mnożące się wokół katastrofy nie musisz patrzeć bezczynnie. Twoje
+          drobne działanie przemnożone przez miliardy ludzi na Ziemi może
+          przynieść spektakularne efekty.
+        </p>
+        <a href="#">Dołącz do Nas</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" /></a>
+        </li>
+      </ul>
+      <div class="textBlocks">
+        <div class="block">
+          <h3>Znaczenie drzew</h3>
+          <p>
+            Drzewa odgrywają bardzo znaczącą rolę dla życia na Ziemi. W końcu to
+            one najskuteczniej produkują tlen w atmosferze.
+          </p>
+        </div>
+        <div class="block">
+          <h3>Jak oszczędzać Wodę</h3>
+          <p>
+            Ocieplenie klimatu, zanieczyszczenie środowiska i brak rozwagi w
+            korzystaniu z wody sprawiają, że jej zasoby zaczynają się
+            wyczerpywać.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      document.addEventListener("mousemove", function (e) {
+        const bg = document.querySelector(".bg");
+        const bird = document.querySelector(".bird");
+        const content = document.querySelector(".content");
+
+        bg.style.width = 100 + e.pageX / 100 + "%";
+        bg.style.height = 100 + e.pageX / 100 + "%";
+
+        bird.style.right = 100 + e.pageX / 2 + "px";
+
+        content.style.left = 100 + e.pageX / 2.5 + "px";
+      });
+    </script>
+  </body>
+</html>
